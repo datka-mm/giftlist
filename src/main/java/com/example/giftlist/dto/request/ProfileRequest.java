@@ -1,4 +1,4 @@
-package com.example.giftlist.dto.request.requests;
+package com.example.giftlist.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;

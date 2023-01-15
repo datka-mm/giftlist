@@ -1,4 +1,4 @@
-package com.example.giftlist.dto.request.requests;
+package com.example.giftlist.dto.request;
 
 import kg.peaksoft.giftlistb6.validations.PasswordValid;
 import lombok.Getter;
