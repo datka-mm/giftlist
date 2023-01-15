@@ -1,7 +1,7 @@
 package com.example.giftlist.db.repositories;
 
-import kg.peaksoft.giftlistb6.db.models.Holiday;
-import kg.peaksoft.giftlistb6.dto.responses.HolidayResponses;
+import com.example.giftlist.db.models.Holiday;
+import com.example.giftlist.dto.response.HolidayResponses;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -12,7 +12,7 @@ import java.util.List;
 
 @Repository
 public interface HolidayRepository extends JpaRepository<Holiday, Long> {
-    @Query("select new kg.peaksoft.giftlistb6.dto.responses.HolidayResponses(" +
+    @Query("select new com.example.giftlist.dto.response.HolidayResponses(" +
             "h.id," +
             "h.name," +
             "h.dateOfHoliday," +

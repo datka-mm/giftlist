@@ -1,12 +1,12 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.WishService;
+import com.example.giftlist.dto.request.WishRequest;
+import com.example.giftlist.dto.response.InnerWishResponse;
+import com.example.giftlist.dto.response.SimpleResponse;
+import com.example.giftlist.dto.response.WishResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.WishService;
-import kg.peaksoft.giftlistb6.dto.requests.WishRequest;
-import kg.peaksoft.giftlistb6.dto.responses.InnerWishResponse;
-import kg.peaksoft.giftlistb6.dto.responses.SimpleResponse;
-import kg.peaksoft.giftlistb6.dto.responses.WishResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

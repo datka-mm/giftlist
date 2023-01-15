@@ -1,11 +1,11 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.ComplaintsService;
+import com.example.giftlist.dto.request.ComplaintRequest;
+import com.example.giftlist.dto.response.ComplaintResponseForAdmin;
+import com.example.giftlist.dto.response.SimpleResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.ComplaintsService;
-import kg.peaksoft.giftlistb6.dto.requests.ComplaintRequest;
-import kg.peaksoft.giftlistb6.dto.responses.ComplaintResponseForAdmin;
-import kg.peaksoft.giftlistb6.dto.responses.SimpleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

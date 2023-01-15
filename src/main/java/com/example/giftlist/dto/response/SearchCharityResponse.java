@@ -1,6 +1,6 @@
 package com.example.giftlist.dto.response;
 
-import kg.peaksoft.giftlistb6.enums.Status;
+import com.example.giftlist.enums.Status;
 import lombok.*;
 
 import java.time.LocalDate;

@@ -1,11 +1,11 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.CharityService;
+import com.example.giftlist.db.services.UserService;
+import com.example.giftlist.dto.response.SearchAllResponse;
+import com.example.giftlist.dto.response.SearchUserResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.CharityService;
-import kg.peaksoft.giftlistb6.db.services.UserService;
-import kg.peaksoft.giftlistb6.dto.responses.SearchAllResponse;
-import kg.peaksoft.giftlistb6.dto.responses.SearchUserResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +25,6 @@ public class SearchApi {
     @Operation(summary = "Search users", description = "User can search other users")
     @GetMapping("/user")
     public List<SearchUserResponse> searchUsers(@RequestParam(value = "text", required = false) String text) {
-
         return userService.searchUser(text);
     }
 

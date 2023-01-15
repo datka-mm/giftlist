@@ -1,6 +1,6 @@
 package com.example.giftlist.dto.response;
 
-import kg.peaksoft.giftlistb6.enums.NotificationType;
+import com.example.giftlist.enums.NotificationType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

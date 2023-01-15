@@ -1,9 +1,9 @@
 package com.example.giftlist.exceptions.handler;
 
-import kg.peaksoft.giftlistb6.exceptions.BadCredentialsException;
-import kg.peaksoft.giftlistb6.exceptions.BadRequestException;
-import kg.peaksoft.giftlistb6.exceptions.ExceptionResponse;
-import kg.peaksoft.giftlistb6.exceptions.NotFoundException;
+import com.example.giftlist.exceptions.BadCredentialsException;
+import com.example.giftlist.exceptions.BadRequestException;
+import com.example.giftlist.exceptions.ExceptionResponse;
+import com.example.giftlist.exceptions.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;

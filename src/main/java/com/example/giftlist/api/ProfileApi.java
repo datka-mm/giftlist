@@ -1,12 +1,12 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.UserProfileService;
+import com.example.giftlist.dto.request.ProfileRequest;
+import com.example.giftlist.dto.response.FriendProfileResponse;
+import com.example.giftlist.dto.response.MyProfileResponse;
+import com.example.giftlist.dto.response.ProfileResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.UserProfileService;
-import kg.peaksoft.giftlistb6.dto.requests.ProfileRequest;
-import kg.peaksoft.giftlistb6.dto.responses.FriendProfileResponse;
-import kg.peaksoft.giftlistb6.dto.responses.MyProfileResponse;
-import kg.peaksoft.giftlistb6.dto.responses.ProfileResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

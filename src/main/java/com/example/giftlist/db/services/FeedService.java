@@ -1,13 +1,13 @@
 package com.example.giftlist.db.services;
 
-import kg.peaksoft.giftlistb6.db.models.User;
-import kg.peaksoft.giftlistb6.db.models.Wish;
-import kg.peaksoft.giftlistb6.db.repositories.MailingListRepository;
-import kg.peaksoft.giftlistb6.db.repositories.UserRepository;
-import kg.peaksoft.giftlistb6.db.repositories.WishRepository;
-import kg.peaksoft.giftlistb6.dto.responses.*;
-import kg.peaksoft.giftlistb6.enums.Status;
-import kg.peaksoft.giftlistb6.exceptions.NotFoundException;
+import com.example.giftlist.db.models.User;
+import com.example.giftlist.db.models.Wish;
+import com.example.giftlist.db.repositories.MailingListRepository;
+import com.example.giftlist.db.repositories.UserRepository;
+import com.example.giftlist.db.repositories.WishRepository;
+import com.example.giftlist.dto.response.*;
+import com.example.giftlist.enums.Status;
+import com.example.giftlist.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;

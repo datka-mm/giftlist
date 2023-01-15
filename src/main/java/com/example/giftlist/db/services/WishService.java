@@ -1,16 +1,15 @@
 package com.example.giftlist.db.services;
-
-import kg.peaksoft.giftlistb6.db.models.*;
-import kg.peaksoft.giftlistb6.db.repositories.*;
-import kg.peaksoft.giftlistb6.dto.requests.WishRequest;
-import kg.peaksoft.giftlistb6.dto.responses.HolidayResponse;
-import kg.peaksoft.giftlistb6.dto.responses.InnerWishResponse;
-import kg.peaksoft.giftlistb6.dto.responses.SimpleResponse;
-import kg.peaksoft.giftlistb6.dto.responses.WishResponse;
-import kg.peaksoft.giftlistb6.enums.NotificationType;
-import kg.peaksoft.giftlistb6.enums.Status;
-import kg.peaksoft.giftlistb6.exceptions.BadRequestException;
-import kg.peaksoft.giftlistb6.exceptions.NotFoundException;
+import com.example.giftlist.db.models.*;
+import com.example.giftlist.db.repositories.*;
+import com.example.giftlist.dto.request.WishRequest;
+import com.example.giftlist.dto.response.HolidayResponse;
+import com.example.giftlist.dto.response.InnerWishResponse;
+import com.example.giftlist.dto.response.SimpleResponse;
+import com.example.giftlist.dto.response.WishResponse;
+import com.example.giftlist.enums.NotificationType;
+import com.example.giftlist.enums.Status;
+import com.example.giftlist.exceptions.BadRequestException;
+import com.example.giftlist.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

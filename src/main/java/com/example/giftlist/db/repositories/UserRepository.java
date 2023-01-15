@@ -1,7 +1,7 @@
 package com.example.giftlist.db.repositories;
 
-import kg.peaksoft.giftlistb6.db.models.User;
-import kg.peaksoft.giftlistb6.dto.responses.SearchUserResponse;
+import com.example.giftlist.db.models.User;
+import com.example.giftlist.dto.response.SearchUserResponse;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -20,7 +20,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @Query("select u from User u where u.role = 'USER' ")
     List<User> getAll();
 
-    @Query("select new kg.peaksoft.giftlistb6.dto.responses.SearchUserResponse(" +
+    @Query("select new com.example.giftlist.dto.response.SearchUserResponse(" +
             "u.id," +
             "u.image," +
             "concat(u.firstName,' ',u.lastName)) from User u where" +

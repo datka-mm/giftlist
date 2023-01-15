@@ -1,7 +1,7 @@
 package com.example.giftlist.db.repositories;
 
-import kg.peaksoft.giftlistb6.db.models.Complaint;
-import kg.peaksoft.giftlistb6.dto.responses.ComplaintResponseForAdmin;
+import com.example.giftlist.db.models.Complaint;
+import com.example.giftlist.dto.response.ComplaintResponseForAdmin;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface ComplaintRepository extends JpaRepository<Complaint, Long> {
 
-    @Query("select new kg.peaksoft.giftlistb6.dto.responses.ComplaintResponseForAdmin(" +
+    @Query("select new com.example.giftlist.dto.response.ComplaintResponseForAdmin(" +
             "c.id," +
             "c.wish.user.id," +
             "c.wish.id," +

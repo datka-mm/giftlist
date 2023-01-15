@@ -1,6 +1,6 @@
 package com.example.giftlist.db.repositories;
 
-import kg.peaksoft.giftlistb6.db.models.Category;
+import com.example.giftlist.db.models.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

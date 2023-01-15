@@ -1,14 +1,14 @@
 package com.example.giftlist.db.services;
 
-import kg.peaksoft.giftlistb6.db.models.Notification;
-import kg.peaksoft.giftlistb6.db.models.User;
-import kg.peaksoft.giftlistb6.db.repositories.NotificationRepository;
-import kg.peaksoft.giftlistb6.db.repositories.UserRepository;
-import kg.peaksoft.giftlistb6.dto.responses.AllNotificationsResponse;
-import kg.peaksoft.giftlistb6.dto.responses.NotificationResponse;
-import kg.peaksoft.giftlistb6.dto.responses.SimpleResponse;
-import kg.peaksoft.giftlistb6.enums.NotificationType;
-import kg.peaksoft.giftlistb6.exceptions.NotFoundException;
+import com.example.giftlist.db.models.Notification;
+import com.example.giftlist.db.models.User;
+import com.example.giftlist.db.repositories.NotificationRepository;
+import com.example.giftlist.db.repositories.UserRepository;
+import com.example.giftlist.dto.response.AllNotificationsResponse;
+import com.example.giftlist.dto.response.NotificationResponse;
+import com.example.giftlist.dto.response.SimpleResponse;
+import com.example.giftlist.enums.NotificationType;
+import com.example.giftlist.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
@@ -17,7 +17,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 @Service
 @RequiredArgsConstructor

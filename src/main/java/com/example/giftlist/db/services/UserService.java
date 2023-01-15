@@ -1,23 +1,24 @@
 package com.example.giftlist.db.services;
 
+import com.example.giftlist.db.models.User;
+import com.example.giftlist.dto.response.AdminResponse;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseToken;
-import kg.peaksoft.giftlistb6.configs.security.JwtUtils;
-import kg.peaksoft.giftlistb6.db.models.User;
-import kg.peaksoft.giftlistb6.db.repositories.UserRepository;
-import kg.peaksoft.giftlistb6.dto.requests.AuthRequest;
-import kg.peaksoft.giftlistb6.dto.requests.ForgotPasswordRequest;
-import kg.peaksoft.giftlistb6.dto.requests.RegisterRequest;
-import kg.peaksoft.giftlistb6.dto.requests.ResetPasswordRequest;
-import kg.peaksoft.giftlistb6.dto.responses.*;
-import kg.peaksoft.giftlistb6.enums.Role;
-import kg.peaksoft.giftlistb6.exceptions.BadCredentialsException;
-import kg.peaksoft.giftlistb6.exceptions.BadRequestException;
-import kg.peaksoft.giftlistb6.exceptions.NotFoundException;
+import com.example.giftlist.configs.security.JwtUtils;
+import com.example.giftlist.db.repositories.UserRepository;
+import com.example.giftlist.dto.request.AuthRequest;
+import com.example.giftlist.dto.request.ForgotPasswordRequest;
+import com.example.giftlist.dto.request.RegisterRequest;
+import com.example.giftlist.dto.request.ResetPasswordRequest;
+import com.example.giftlist.dto.response.*;
+import com.example.giftlist.enums.Role;
+import com.example.giftlist.exceptions.BadCredentialsException;
+import com.example.giftlist.exceptions.BadRequestException;
+import com.example.giftlist.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
@@ -160,7 +161,9 @@ public class UserService {
                 () -> {
                     log.error("User with email:{} not found!", email);
                     throw new NotFoundException(String.format("Пользователь с таким электронным адресом %s не найден!", email));
-                });
+                }
+        );
+
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
         helper.setSubject("[gift_list] reset password link");
