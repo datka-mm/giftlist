@@ -1,7 +1,7 @@
 package com.example.giftlist.db.models;
 
+import com.example.giftlist.enums.Status;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import kg.peaksoft.giftlistb6.enums.Status;
 import lombok.*;
 
 import javax.persistence.*;

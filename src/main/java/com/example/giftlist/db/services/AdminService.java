@@ -1,5 +1,8 @@
 package com.example.giftlist.db.services;
 
+import com.example.giftlist.db.models.User;
+import com.example.giftlist.db.repositories.UserRepository;
+import com.example.giftlist.dto.response.AdminResponse;
 import kg.peaksoft.giftlistb6.db.models.Charity;
 import kg.peaksoft.giftlistb6.db.models.Holiday;
 import kg.peaksoft.giftlistb6.db.models.User;

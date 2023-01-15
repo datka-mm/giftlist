@@ -1,6 +1,6 @@
 package com.example.giftlist.db.models;
 
-import kg.peaksoft.giftlistb6.enums.NotificationType;
+import com.example.giftlist.enums.NotificationType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

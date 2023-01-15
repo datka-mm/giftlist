@@ -1,5 +1,7 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.*;
+import com.example.giftlist.dto.response.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import kg.peaksoft.giftlistb6.db.services.*;

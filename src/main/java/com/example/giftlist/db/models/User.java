@@ -1,6 +1,6 @@
 package com.example.giftlist.db.models;
 
-import kg.peaksoft.giftlistb6.enums.Role;
+import com.example.giftlist.enums.Role;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
