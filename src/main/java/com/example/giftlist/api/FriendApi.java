@@ -1,10 +1,10 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.FriendService;
+import com.example.giftlist.dto.response.FriendInfoResponse;
+import com.example.giftlist.dto.response.SimpleResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.FriendService;
-import kg.peaksoft.giftlistb6.dto.responses.FriendInfoResponse;
-import kg.peaksoft.giftlistb6.dto.responses.SimpleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

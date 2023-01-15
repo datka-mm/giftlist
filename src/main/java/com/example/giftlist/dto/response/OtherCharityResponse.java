@@ -1,7 +1,7 @@
 package com.example.giftlist.dto.response;
 
-import kg.peaksoft.giftlistb6.db.models.Charity;
-import kg.peaksoft.giftlistb6.enums.Status;
+import com.example.giftlist.db.models.Charity;
+import com.example.giftlist.enums.Status;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

@@ -1,8 +1,8 @@
 package com.example.giftlist.configs.security;
 
-import kg.peaksoft.giftlistb6.db.models.User;
-import kg.peaksoft.giftlistb6.db.repositories.UserRepository;
-import kg.peaksoft.giftlistb6.exceptions.NotFoundException;
+import com.example.giftlist.db.models.User;
+import com.example.giftlist.db.repositories.UserRepository;
+import com.example.giftlist.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,6 +25,7 @@ public class TokenVerifyFilter extends OncePerRequestFilter {
     private final JwtUtils jwtUtils;
     private final UserRepository userRepository;
 
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
@@ -32,22 +33,23 @@ public class TokenVerifyFilter extends OncePerRequestFilter {
 
         optionalToken.ifPresent(token -> {
 
-            String email = jwtUtils.verifyToken(token);
+                    String email = jwtUtils.verifyToken(token);
 
-            System.out.println("email = " + email);
-            User user = userRepository.findByEmail(email)
-                    .orElseThrow(NotFoundException::new);
+                    System.out.println("email = " + email);
+                    User user = userRepository.findByEmail(email)
+                            .orElseThrow(NotFoundException::new);
 
-            userRepository.findAll().forEach(System.out::println);
+                    userRepository.findAll().forEach(System.out::println);
 
-            UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
-                    user.getEmail(),
-                    null,
-                    Collections.singletonList(user.getRole())
-            );
+                    UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
+                            user.getEmail(),
+                            null,
+                            Collections.singletonList(user.getRole())
+                    );
 
-            SecurityContextHolder.getContext().setAuthentication(authenticationToken);
-        });
+                    SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+                }
+        );
 
         filterChain.doFilter(request, response);
     }

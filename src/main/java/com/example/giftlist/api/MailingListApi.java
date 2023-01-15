@@ -1,12 +1,12 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.MailingListService;
+import com.example.giftlist.dto.request.MailingListRequest;
+import com.example.giftlist.dto.response.AllMailingListResponse;
+import com.example.giftlist.dto.response.MailingListResponse;
+import com.example.giftlist.dto.response.SimpleResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.MailingListService;
-import kg.peaksoft.giftlistb6.dto.requests.MailingListRequest;
-import kg.peaksoft.giftlistb6.dto.responses.AllMailingListResponse;
-import kg.peaksoft.giftlistb6.dto.responses.MailingListResponse;
-import kg.peaksoft.giftlistb6.dto.responses.SimpleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

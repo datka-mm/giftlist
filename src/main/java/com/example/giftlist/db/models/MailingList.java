@@ -1,6 +1,6 @@
 package com.example.giftlist.db.models;
 
-import kg.peaksoft.giftlistb6.dto.requests.MailingListRequest;
+import com.example.giftlist.dto.request.MailingListRequest;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

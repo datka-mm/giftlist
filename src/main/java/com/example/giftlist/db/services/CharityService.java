@@ -1,16 +1,16 @@
 package com.example.giftlist.db.services;
 
-import kg.peaksoft.giftlistb6.db.models.Charity;
-import kg.peaksoft.giftlistb6.db.models.User;
-import kg.peaksoft.giftlistb6.db.repositories.CategoryRepository;
-import kg.peaksoft.giftlistb6.db.repositories.CharityRepository;
-import kg.peaksoft.giftlistb6.db.repositories.SubCategoryRepository;
-import kg.peaksoft.giftlistb6.db.repositories.UserRepository;
-import kg.peaksoft.giftlistb6.dto.requests.CharityRequest;
-import kg.peaksoft.giftlistb6.dto.responses.*;
-import kg.peaksoft.giftlistb6.enums.Status;
-import kg.peaksoft.giftlistb6.exceptions.BadRequestException;
-import kg.peaksoft.giftlistb6.exceptions.NotFoundException;
+import com.example.giftlist.db.models.Charity;
+import com.example.giftlist.db.models.User;
+import com.example.giftlist.db.repositories.CategoryRepository;
+import com.example.giftlist.db.repositories.CharityRepository;
+import com.example.giftlist.db.repositories.SubCategoryRepository;
+import com.example.giftlist.db.repositories.UserRepository;
+import com.example.giftlist.dto.request.CharityRequest;
+import com.example.giftlist.dto.response.*;
+import com.example.giftlist.enums.Status;
+import com.example.giftlist.exceptions.BadRequestException;
+import com.example.giftlist.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;

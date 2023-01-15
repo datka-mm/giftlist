@@ -1,10 +1,10 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.CharityService;
+import com.example.giftlist.dto.request.CharityRequest;
+import com.example.giftlist.dto.response.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.CharityService;
-import kg.peaksoft.giftlistb6.dto.requests.CharityRequest;
-import kg.peaksoft.giftlistb6.dto.responses.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,10 +1,10 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.FeedService;
+import com.example.giftlist.dto.response.AllFeedResponse;
+import com.example.giftlist.dto.response.InnerFeedResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.FeedService;
-import kg.peaksoft.giftlistb6.dto.responses.AllFeedResponse;
-import kg.peaksoft.giftlistb6.dto.responses.InnerFeedResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

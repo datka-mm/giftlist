@@ -1,15 +1,15 @@
 package com.example.giftlist.api;
 
+import com.example.giftlist.db.services.UserService;
+import com.example.giftlist.dto.request.AuthRequest;
+import com.example.giftlist.dto.request.ForgotPasswordRequest;
+import com.example.giftlist.dto.request.RegisterRequest;
+import com.example.giftlist.dto.request.ResetPasswordRequest;
+import com.example.giftlist.dto.response.AuthResponse;
+import com.example.giftlist.dto.response.SimpleResponse;
 import com.google.firebase.auth.FirebaseAuthException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import kg.peaksoft.giftlistb6.db.services.UserService;
-import kg.peaksoft.giftlistb6.dto.requests.AuthRequest;
-import kg.peaksoft.giftlistb6.dto.requests.ForgotPasswordRequest;
-import kg.peaksoft.giftlistb6.dto.requests.RegisterRequest;
-import kg.peaksoft.giftlistb6.dto.requests.ResetPasswordRequest;
-import kg.peaksoft.giftlistb6.dto.responses.AuthResponse;
-import kg.peaksoft.giftlistb6.dto.responses.SimpleResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

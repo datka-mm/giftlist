@@ -1,6 +1,6 @@
 package com.example.giftlist.dto.response;
 
-import kg.peaksoft.giftlistb6.enums.Role;
+import com.example.giftlist.enums.Role;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

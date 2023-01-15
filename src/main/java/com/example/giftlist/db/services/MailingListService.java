@@ -1,12 +1,12 @@
 package com.example.giftlist.db.services;
 
-import kg.peaksoft.giftlistb6.db.models.MailingList;
-import kg.peaksoft.giftlistb6.db.repositories.MailingListRepository;
-import kg.peaksoft.giftlistb6.dto.requests.MailingListRequest;
-import kg.peaksoft.giftlistb6.dto.responses.AllMailingListResponse;
-import kg.peaksoft.giftlistb6.dto.responses.MailingListResponse;
-import kg.peaksoft.giftlistb6.dto.responses.SimpleResponse;
-import kg.peaksoft.giftlistb6.exceptions.NotFoundException;
+import com.example.giftlist.db.models.MailingList;
+import com.example.giftlist.db.repositories.MailingListRepository;
+import com.example.giftlist.dto.request.MailingListRequest;
+import com.example.giftlist.dto.response.AllMailingListResponse;
+import com.example.giftlist.dto.response.MailingListResponse;
+import com.example.giftlist.dto.response.SimpleResponse;
+import com.example.giftlist.exceptions.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
